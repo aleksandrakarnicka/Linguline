@@ -10,11 +10,12 @@ footer {
   position: static;
   bottom: 30px;
   text-align: center;
-  text-align: center;
   color: #00917c;
   font-family: "Consolas", monospace;
   font-size: 10px;
   font-weight: lighter;
+  padding-top: 3%;
+  padding-bottom: 0;
 }
 
 body {
@@ -40,17 +41,6 @@ h2 {
     padding: 1%;
     border: 1px solid #00917c;
     width: 700px;
-}
-
-h2 {
-    background-color:#d3e1e1;
-    text-align: left;
-    font-family: "Consolas", monospace;
-    font-size: 10px;
-    font-weight: lighter;
-    padding: 1%;
-    border: 1px solid #00917c;
-    width: 700px;
     margin:3%;
     
 }
@@ -60,6 +50,7 @@ h3 {
     font-family: "Consolas", monospace;
     font-size: 10px;
     font-weight: lighter;
+    padding-top: 1%;
 }
 
 h4 {
@@ -98,6 +89,12 @@ button {
     border: 1px solid #00917c;
     width: 700px;
     color: white;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
 }
 
 div {
@@ -159,70 +156,71 @@ div {
 
 
 /* TEAM */
+.column {
+  float: left;
+  width:50%;
+  margin-bottom: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 10%;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+  justify-content: center;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+  text-align: center;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 5px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
   .column {
-    float: left;
-    width:50%;
-    margin-bottom: 16px;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 5%;
-  }
-  
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 8px;
-  }
-  
-  .about-section {
-    padding: 10%;
-    text-align: center;
-    background-color: #474e5d;
-    color: white;
-  }
-  
-  .container {
-    padding: 0 16px;
-  }
-  
-  .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .title {
-    color: grey;
-  }
-  
-  .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
     width: 100%;
+    display: block;
   }
-  
-  .button:hover {
-    background-color: #555;
-  }
-  
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }
-  
+}
+
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+  content: "";
+  display: table;
+  clear: both;
+}
 
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+}
