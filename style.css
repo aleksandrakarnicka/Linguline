@@ -1,109 +1,117 @@
 /* MAIN */
+body { 
+  width: 100%; 
+  margin: auto;
+  }
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 45%;
+  padding: 1%;
+  
 }
- 
+
 footer {
-  position: static;
-  bottom: 30px;
+position: static;
+bottom: 30px;
+text-align: center;
+text-align: center;
+color: #00917c;
+font-family: "Consolas", monospace;
+font-size: 10px;
+font-weight: lighter;
+margin-bottom: 10px;
+}
+
+body {
+  background-color:#ffffff;
+}
+
+h1 {
   text-align: center;
+  font-family: "Consolas", monospace;
+  background-color: white;
+  color: #00917c;
+  font-size: 13px;
+  font-weight: lighter;        
+}
+
+h2 {
+  position: static;
+  justify-content: center;
+  margin-left: block;
+  background-color:#d3e1e1;
+  text-align: left;
+  font-family: "Consolas", monospace;
+  font-size: 10px;
+  font-weight: lighter;
+  padding: 10px;
+  border: 1px solid #00917c;
+  max-width: 700px;
+}
+
+h3 {
   text-align: center;
   color: #00917c;
   font-family: "Consolas", monospace;
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+h4 {
+  text-align: center;
+  font-family: "Consolas", monospace;
+  background-color: white;
+  color: #00917c;
   font-size: 10px;
   font-weight: lighter;
 }
 
-body {
-    background-color:#ffffff;
-    margin: 5px;
-}
-
-h1 {
-    text-align: center;
-    font-family: "Consolas", monospace;
-    background-color: white;
-    color: #00917c;
-    font-size: 15px;
-    font-weight: lighter;        
-}
-
-h2 {
-    background-color:#d3e1e1;
-    text-align: left;
-    font-family: "Consolas", monospace;
-    font-size: 10px;
-    font-weight: lighter;
-    padding: 1%;
-    border: 1px solid #00917c;
-    width: 700px;
-}
-
-h2 {
-    background-color:#d3e1e1;
-    text-align: left;
-    font-family: "Consolas", monospace;
-    font-size: 10px;
-    font-weight: lighter;
-    padding: 1%;
-    border: 1px solid #00917c;
-    width: 700px;
-    margin:3%;
-    
-}
-h3 {
-    text-align: center;
-    color: #00917c;
-    font-family: "Consolas", monospace;
-    font-size: 10px;
-    font-weight: lighter;
-}
-
-h4 {
-    text-align: center;
-    font-family: "Consolas", monospace;
-    background-color: white;
-    color: #00917c;
-    font-size: 13px;
-    font-weight: lighter;
-}
-
 textarea {
-    background-color:#d3e1e1;
-    text-align: left;
-    font-family: "Consolas", monospace;
-    font-size: 10px;
-    font-weight: lighter;
-    padding: 1%;
-    border: 1px solid #00917c;
-    width: 700px;
-    height: 200px;
+  position: static;
+  justify-content: center;
+  margin-left: block;
+  background-color:#d3e1e1;
+  text-align: left;
+  font-family: "Consolas", monospace;
+  font-size: 10px;
+  font-weight: lighter;
+  padding: 10px;
+  border: 1px solid #00917c;
+  
+  
 }
 
 button {
-    height: 40px;
-    display: block;
-    text-align: center;
-    justify-content: center;
-    margin-left: 0%;
-    font-size: medium;
-    background-color:#00917c;
-    font-family: "Consolas", monospace;
-    font-size: 15px;
-    font-weight: lighter;
-    padding: 1%;
-    border: 1px solid #00917c;
-    width: 700px;
-    color: white;
+  height: 40px;
+  margin-top: 1%;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  font-size: medium;
+  background-color:#00917c;
+  font-family: "Consolas", monospace;
+  font-size: 15px;
+  font-weight: lighter;
+  padding: 10px;
+  border: 1px solid #00917c;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.button9 {
+  background-color: #00917c; 
+  color: white; 
+  border: 1px solid #00917c;
 }
 
-div {
-    width:70%; 
-    margin: 0px auto; 
+.button9:hover {
+  background-color: #5ad6c4;
+  color: white;
 }
+
 
 
 /* MENU */
@@ -200,7 +208,7 @@ div {
     display: inline-block;
     padding: 8px;
     color: white;
-    background-color: #000;
+    background-color: #00917c;
     text-align: center;
     cursor: pointer;
     width: 100%;
