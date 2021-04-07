@@ -226,9 +226,3 @@ div {
 * {
     box-sizing: border-box;
   }
-
-column {
-    float: left;
-    width: 50%;
-    padding: 5px;
-  }
