@@ -154,6 +154,12 @@ div {
 
 
 /* TEAM */
+.row {
+  margin: 0%;
+  justify-content: center;
+  padding: 1%;
+}
+
 .column {
   float: left;
   width:50%;
@@ -165,8 +171,8 @@ div {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 4px;
-  width: 500px;
+  margin: 0%;
+  width: 400px;
 }
 
 .about-section {
@@ -174,6 +180,8 @@ div {
   text-align: center;
   background-color: #474e5d;
   color: white;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .container {
