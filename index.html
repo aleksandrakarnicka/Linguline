@@ -35,12 +35,61 @@
 <h2>
 <form> 
     <meta name="viewport" content="width=device-width">
-    <textarea id="textarea" name="intext" placeholder="Let's talk about words!" style="background-color:#e6efee; resize: none; width: 100%; font-family: Consolas, monospace;" autocomplete="off"></textarea>
-    <button type="submit" class="button button9"> Send <i class="far fa-comment-dots"></i></button><br>
+    <textarea id="final" placeholder="Let's talk about words!" style="background-color:#e6efee; resize: none; width: 100%; font-family: Consolas, monospace;" autocomplete="off"></textarea>
+    <button type="button" class="button button9" onclick="runSpeechRecognition()"> Send <i class="far fa-comment-dots"></i></button><br>
+    &nbsp; <span id="action"></span>
 </form>
 </h2>
 </center>
 <h3>Let's talk again soon!</h3></div>
+<script>
 
+    function runSpeechRecognition() {
+    
+    // get output div reference
+    
+    var output = document.getElementById("output");
+    
+    // get action element reference
+    
+    var action = document.getElementById("action");
+    
+    // new speech recognition object
+    
+    var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+    
+    var recognition = new SpeechRecognition();
+    
+    // This runs when the speech recognition service starts
+    
+    recognition.onstart = function() {
+    
+    };
+    
+    recognition.onspeechend = function() {
+    
+    recognition.stop();
+    
+    }
+    
+    // This runs when the speech recognition service returns result
+    
+    recognition.onresult = function(event) {
+    
+    var transcript = event.results[0][0].transcript;
+    
+    document.querySelector("#final").innerHTML = transcript;
+    
+    };
+    
+    // start recognition
+    
+    recognition.start();
+    
+    }
+    
+    </script>
+    
+    </body>
 
 <footer>Jagodzianki™ 2021 | line PNG designed by ngupakarti from pngtree.com</footer>
