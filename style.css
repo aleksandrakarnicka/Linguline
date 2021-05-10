@@ -33,7 +33,7 @@ h1 {
   font-family: "Consolas", monospace;
   background-color: white;
   color: #00917c;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: lighter;        
 }
 
@@ -44,7 +44,7 @@ h2 {
   background-color:#d3e1e1;
   text-align: left;
   font-family: "Consolas", monospace;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: lighter;
   padding: 10px;
   border: 1px solid #00917c;
@@ -55,7 +55,7 @@ h3 {
   text-align: center;
   color: #00917c;
   font-family: "Consolas", monospace;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: lighter;
 }
 
@@ -64,7 +64,7 @@ h4 {
   font-family: "Consolas", monospace;
   background-color: white;
   color: #00917c;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: lighter;
 }
 
@@ -75,7 +75,7 @@ textarea {
   background-color:#d3e1e1;
   text-align: left;
   font-family: "Consolas", monospace;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: lighter;
   padding: 10px;
   border: 1px solid #00917c;
