@@ -2,17 +2,20 @@
 body { 
   width: 100%; 
   margin: auto;
+  background-color:#ffffff;
   }
+
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   max-width: 45%;
   padding: 1%;
-  
+  width: 100%;
 }
 
 footer {
+width: 100%;
 position: static;
 bottom: 0;
 text-align: center;
@@ -24,13 +27,17 @@ font-weight: lighter;
 margin-bottom: 10px;
 padding-top: 2%; 
 padding-bottom: 0;
+<<<<<<< HEAD
 }
 
 body {
   background-color:#ffffff;
+=======
+>>>>>>> martyna-i
 }
 
 h1 {
+  width: 100%;
   text-align: center;
   font-family: "Consolas", monospace;
   background-color: white;
@@ -42,7 +49,6 @@ h1 {
 h2 {
   position: static;
   justify-content: center;
-  margin-left: block;
   background-color:#d3e1e1;
   text-align: left;
   font-family: "Consolas", monospace;
@@ -70,10 +76,23 @@ h4 {
   font-weight: lighter;
 }
 
+form {
+  display: inline;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color:#d3e1e1;
+  padding: 10px;
+  border: 1px solid #00917c;
+  max-width: 700px;
+}
+
 textarea {
   position: static;
   justify-content: center;
-  margin-left: block;
   background-color:#d3e1e1;
   text-align: left;
   font-family: "Consolas", monospace;
@@ -81,40 +100,84 @@ textarea {
   font-weight: lighter;
   padding: 10px;
   border: 1px solid #00917c;
-  
-  
 }
 
 button {
   height: 40px;
   margin-top: 1%;
-  display: block;
+  display: inline-block;
   text-align: center;
   justify-content: center;
-  font-size: medium;
   background-color:#00917c;
   font-family: "Consolas", monospace;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: lighter;
-  padding: 10px;
+  padding: 1%;
   border: 1px solid #00917c;
   color: white;
-  width: 100%;
   cursor: pointer;
   transition-duration: 0.4s;
-}
-.button9 {
-  background-color: #00917c; 
-  color: white; 
-  border: 1px solid #00917c;
+  text-align: center;
+  display: inline-block;
 }
 
-.button9:hover {
+.button:hover {
   background-color: #5ad6c4;
   color: white;
 }
 
+.button3 {
+  width: 100%;
+  height: 40px;
+  background-color:#00917c;
+  font-family: "Consolas", monospace;
+  font-size: 13px;
+  font-weight: lighter;
+  padding: 1%;
+  border: 1px solid #00917c;
+  color: white;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  display: inline-block;
+  width:33%; 
+  cursor: pointer; 
+  text-align: center; 
+  margin: auto; 
+  justify-content: center;
+}
 
+#button3 {
+  text-align: center;
+  justify-content: center;
+}
+
+.btn-group button {
+  width: 40%;
+  background-color: #00917c;
+  border: 1px solid #027462;
+  color: white;
+  padding: 2%;
+  cursor: pointer;
+  float: left;
+  margin-left: 5%; 
+  margin-top: 1%; 
+  margin-bottom: 1%;
+  padding: 1%;
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display:inline-block;
+  justify-content: center;
+  overflow:hidden
+        }
+
+
+.btn-group button:hover {
+  background-color: #ddd;
+}
 
 /* MENU */
 
@@ -122,6 +185,7 @@ button {
 @media screen and (max-width: 700px) {
     .row {   
       flex-direction: column;
+      width: 100%;
     }
   }
   
@@ -204,6 +268,7 @@ button {
   justify-content: center;
 }
 
+
 .container::after, .row::after {
   content: "";
   clear: both;
@@ -213,18 +278,6 @@ button {
 .title {
   color: grey;
   text-align: center;
-}
-
-.button0 {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 5px;
-  color: white;
-  background-color: rgb(0, 0, 0);
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
 }
 
 @media screen and (max-width: 600px) {
@@ -253,6 +306,11 @@ button {
     padding: 0 16px;
   }
   
+  #container {
+    justify-content: center;
+    text-align: center;
+  }
+
   .container::after, .row::after {
     content: "";
     clear: both;
@@ -263,7 +321,7 @@ button {
     color: grey;
   }
   
-  .button {
+  .button1 {
     border: none;
     outline: 0;
     display: inline-block;
@@ -272,8 +330,7 @@ button {
     background-color: #00917c;
     text-align: center;
     cursor: pointer;
-    width: 100%;
-    display: block;
+    width: 20%;
   }
 }
 
