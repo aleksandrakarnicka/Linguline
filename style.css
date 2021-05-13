@@ -42,7 +42,6 @@ h1 {
 h2 {
   position: static;
   justify-content: center;
-  margin-left: block;
   background-color:#d3e1e1;
   text-align: left;
   font-family: "Consolas", monospace;
@@ -87,7 +86,6 @@ form {
 textarea {
   position: static;
   justify-content: center;
-  margin-left: block;
   background-color:#d3e1e1;
   text-align: left;
   font-family: "Consolas", monospace;
@@ -169,9 +167,6 @@ button {
   overflow:hidden
         }
 
-.btn-group button:not(:last-child) {
-  border-right: none; /* Prevent double borders */
-}
 
 .btn-group button:hover {
   background-color: #ddd;
