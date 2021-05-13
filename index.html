@@ -1,58 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <h3>Created by M. Gierszewska, M. Iwaniec, A. Karnicka, M. Putrycz</h3>
 <body>
 <head>
     <link rel="shortcut icon" href="favicon1.jpg" type="image/x-icon">  
 
-    <link rel = "stylesheet"
-    type = "text/css"
-	href = "style.css"/>
-    		
+    <link rel = "stylesheet" type = "text/css" href = "style.css" />
+    
+    <script src="https://kit.fontawesome.com/b2c03c1072.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h3>Created by M. Gierszewska, M. Iwaniec, A. Karnicka, M. Putrycz</h3>
+
     <div class="navbar">
         <a href="/project.html" class="right">Project</a>
         <a href="/team.html" class="right">Team</a>
         <a href="/index.html" class="right">Home</a>
-      </div>
-    
-      <script src="https://kit.fontawesome.com/b2c03c1072.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
+    </div>
     <img src="linguline1.jpg" class="center" >
     <div>
         <h1>Hi! I'm a chatbot. You can ask me about different words! I am passionate about dictionaries!</h1>
         <center>
-        <h2>Instructions:
-        <p>1. Say hello to Linguline! </p>
-        <p>2. Ask him about a word that you are interested in. You have 2 options:</p>
-        <p>-> you can either write your word below and click 'enter'</p>
-        <p>-> or you can click on the button and say your word out loud</p>
-        <p>IPORTANT: Speech recognition is not recognised by Firefox!</p>
-        <p>3. Specify what do you want to know about this word in particular. </p>
-        <p>4. Enjoy your knowledge! </p></h2>
-</center>
+            <h2>Instructions:
+            <p>1. Say hello to Linguline! </p>
+            <p>2. Ask him about a word that you are interested in. You have 2 options:</p>
+            <p>-> you can either write your word below and click 'enter'</p>
+            <p>-> or you can click on the button and say your word out loud</p>
+            <p>IMPORTANT: Speech recognition is not recognised by Firefox!</p>
+            <p>3. Specify what do you want to know about this word in particular. </p>
+            <p>4. Enjoy your knowledge! </p></h2>
+        </center>
 
-    <h3>Talk to me!</h3>
-</div>
-
-<center>
-
-<form> 
-    <h2>
-    <meta name="viewport" content="width=device-width">
-    <textarea id="final" placeholder="Let's talk about words!" style="background-color:#e6efee; resize: none; width: 100%; font-family: Consolas, monospace;" autocomplete="off"></textarea>
+        <h3>Talk to me!</h3>
+    </div>
     
-    <div class="btn-group">
-    <button type="button" onclick=""> Send the message <i class="far fa-comment-dots"></i></button><br>
-    <button type="button" onclick="runSpeechRecognition()"> Turn on speech recognition <i class="fa fa-microphone"></i></button><br>
-        &nbsp; <span id="action"></span>    
-    </h2>
-</div>
-</form>
-</center>
+    <center>
 
-<h3>Let's talk again soon!</h3></div>
+        <div class="form">
+            <form> 
+                <textarea id="final" placeholder="Let's talk about words!" style="background-color:#e6efee; resize: none; width: 100%; font-family: Consolas, monospace;" autocomplete="off"></textarea>
+                
+                <div class="btn-group">
+                    <button type="button" onclick=""> Send the message <i class="far fa-comment-dots"></i></button>
+                    <button type="button" onclick="runSpeechRecognition()"> Turn on speech recognition <i class="fa fa-microphone"></i></button><br>
+                    &nbsp; <span id="action"></span>    
+                </div>
+            </form>
+        </div>
+    </center>
+    <h3>Let's talk again soon!</h3></div>
 
 <script>
 
