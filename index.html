@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <script src="api.js" ></script>
     <h3>Created by M. Gierszewska, M. Iwaniec, A. Karnicka, M. Putrycz</h3>
 
     <div class="navbar">
@@ -39,9 +40,10 @@
         <div class="form">
             <form> 
                 <textarea id="final" placeholder="Let's talk about words!" style="background-color:#e6efee; resize: none; width: 100%; font-family: Consolas, monospace;" autocomplete="off"></textarea>
+                <textarea id="partOfSpeech" placeholder="Let's check synonyms!" style="background-color:#e6efee; resize: none; width: 100%; font-family: Consolas, monospace;" autocomplete="off"></textarea>
                 
                 <div class="btn-group">
-                    <button type="button" onclick=""> Send the message <i class="far fa-comment-dots"></i></button>
+                    <button type="button" onclick="getSynonym(event)"> Send the message <i class="far fa-comment-dots"></i></button>
                     <button type="button" onclick="runSpeechRecognition()"> Turn on speech recognition <i class="fa fa-microphone"></i></button><br>
                     &nbsp; <span id="action"></span>    
                 </div>
