@@ -1,10 +1,11 @@
- 
-			$(document).ready(function() {
+
+
+			(function($){
 				//responsive menu toggle
 				$("#menutoggle").click(function() {
 					$('.xs-menu').toggleClass('displaynone');
 
-					});
+				})(jQuery); 
 				//add active class on menu
 				$('ul li').click(function(e) {
 					e.preventDefault();

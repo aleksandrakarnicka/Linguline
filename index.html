@@ -2,6 +2,7 @@
 <h3>Created by M. Gierszewska, M. Iwaniec, A. Karnicka, M. Putrycz</h3>
 <body>
 <head>
+    <script src="jquery.min.js"></script>
     <link rel="shortcut icon" href="favicon1.jpg" type="image/x-icon">  
 
     <link rel = "stylesheet"
@@ -42,54 +43,9 @@
 </h2>
 </center>
 <h3>Let's talk again soon!</h3></div>
-<script>
 
-    function runSpeechRecognition() {
-    
-    // get output div reference
-    
-    var output = document.getElementById("output");
-    
-    // get action element reference
-    
-    var action = document.getElementById("action");
-    
-    // new speech recognition object
-    
-    var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
-    
-    var recognition = new SpeechRecognition();
-    
-    // This runs when the speech recognition service starts
-    
-    recognition.onstart = function() {
-    
-    };
-    
-    recognition.onspeechend = function() {
-    
-    recognition.stop();
-    
-    }
-    
-    // This runs when the speech recognition service returns result
-    
-    recognition.onresult = function(event) {
-    
-    var transcript = event.results[0][0].transcript;
-    
-    document.querySelector("#final").innerHTML = transcript;
-    
-    };
-    
-    // start recognition
-    
-    recognition.start();
-    
-    }
-    
-    </script>
-    
+<script src="SpeechRecognition.js"></script>
+
     </body>
 
 <footer>Jagodzianki™ 2021 | line PNG designed by ngupakarti from pngtree.com</footer>
