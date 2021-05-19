@@ -8,9 +8,10 @@ function getSynonym(event) {
     fetch(url)
         .then(response => response.json())
         .then(response => {
+            console.log(response)
             APIword.innerHTML = "";
             meanings = response[0] && response[0]["meanings"]
-            for(let i=0;i<meanings.lenght; i++) {
+            for(let i=0;i<meanings.length; i++) {
                 let li=document.createElement("li");
                 li.appendChild(document.createTextNode(meanings[i]));
                 APIword.appendChild(li);
