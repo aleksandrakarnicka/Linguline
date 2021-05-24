@@ -25,10 +25,10 @@
             <h2>Instructions:
             <p>1. Say hello to Linguline! </p>
             <p>2. Ask him about a word that you are interested in. You have 2 options:</p>
-            <p>-> you can either write your word below and click 'enter'</p>
-            <p>-> or you can click on the button and say your word out loud</p>
+            <p>-> you can either write your word below and click 'send the message'</p>
+            <p>-> or you can click on the other button and say your word out loud</p>
             <p>IMPORTANT: Speech recognition is not recognised by Firefox!</p>
-            <p>3. Specify what do you want to know about this word in particular. </p>
+            <p>3. You can only check one word at a time!</p>
             <p>4. Enjoy your knowledge! </p></h2>
         </center>
 
@@ -39,9 +39,9 @@
 
         <div class="form">
             <form> 
-                <textarea id="final" placeholder="Let's talk about words!" style="background-color:#e6efee; resize: none; width: 100%; font-family: Consolas, monospace;" autocomplete="off"></textarea>
-                <textarea id="partOfSpeech" placeholder="Let's check synonyms!" style="background-color:#e6efee; resize: none; width: 100%; font-family: Consolas, monospace;" autocomplete="off"></textarea>
-                
+                <!-- <textarea disabled class="talkBot" id="partOfSpeech" placeholder="" style="background-color:#e6efee; resize: none; width: 100%; font-family: Consolas, monospace;" autocomplete="off"></textarea> -->
+                <textarea id="final" placeholder="Write here!" style="background-color:#e6efee; resize: none; width: 100%; font-family: Consolas, monospace;" autocomplete="off"></textarea>
+                <div id="output"></div>
                 <div class="btn-group">
                     <button type="button" onclick="getDefinitions(event)"> Send the message <i class="far fa-comment-dots"></i></button>
                     <button type="button" onclick="runSpeechRecognition()"> Turn on speech recognition <i class="fa fa-microphone"></i></button><br>
@@ -51,7 +51,7 @@
         </div>
     </center>
     <h3>Let's talk again soon!</h3></div>
-<div id="output"></div>
+
 <script>
 
     function runSpeechRecognition() {

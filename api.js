@@ -18,19 +18,29 @@ function getDefinitions(event) {
                 // let meaning = meanings[i];
                 // console.log(meaning);
                 let li_pos=document.createElement("li");
+                li_pos.append("Part of speech: ")
                 li_pos.appendChild(document.createTextNode(meanings[i]["partOfSpeech"]));
                 output.appendChild(newul);
                 newul.appendChild(li_pos);
                 for(let j=0;j<meanings[i]["definitions"].length; j++) {
                     let deful = document.createElement("ul");
+                    deful.className = "talkBot"
                     let defli = document.createElement("li");
+                    defli.append("Definition: ")
                     defli.appendChild(document.createTextNode(meanings[i]["definitions"][j]["definition"]));
                     output.appendChild(deful);
                     deful.appendChild(defli);
                     if (meanings[i]["definitions"][j]["example"]) {
                         let exli = document.createElement("li");
+                        exli.append("Example: ")
                         exli.appendChild(document.createTextNode(meanings[i]["definitions"][j]["example"]));
                         deful.appendChild(exli);
+                    }
+                    if (meanings[i]["definitions"][j]["synonyms"]) {
+                        let synli = document.createElement("li");
+                        synli.append("Synonyms: ")
+                        synli.appendChild(document.createTextNode(meanings[i]["definitions"][j]["synonyms"]));
+                        deful.appendChild(synli);
                     }
                 }
             }
