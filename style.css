@@ -69,6 +69,18 @@ h4 {
   font-weight: lighter;
 }
 
+.talkBot {
+  position: static;
+  justify-content: center;
+  background-color:#d3e1e1;
+  text-align: left;
+  font-family: "Consolas", monospace;
+  font-size: 12px;
+  font-weight: lighter;
+  padding: 10px;
+  border: 1px solid #00917c;
+}
+
 form {
   display: inline;
 }
@@ -94,6 +106,8 @@ textarea {
   padding: 10px;
   border: 1px solid #00917c;
 }
+
+
 
 button {
   height: 40px;
@@ -240,6 +254,7 @@ button {
   padding-right: 10%;
   padding-bottom: 5%;
 }
+
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);

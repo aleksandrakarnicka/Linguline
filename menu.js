@@ -8,7 +8,7 @@
 				//add active class on menu
 				$('ul li').click(function(e) {
 					e.preventDefault();
-					$('li').removeClass('active');
+					$('li.appendChild(deful);').removeClass('active');
 					$(this).addClass('active');
 				});
 			//drop down menu	
