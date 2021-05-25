@@ -78,9 +78,15 @@ h4 {
   font-size: 12px;
   font-weight: lighter;
   padding: 10px;
-  border: 1px solid #00917c;
+  border: 0px solid #00917c;
+  color: #00917c;
+  list-style-type: none;
+  max-width: 700px;
 }
-
+.li_pos {
+  list-style-type: none;
+  color: #00917c;
+}
 form {
   display: inline;
 }
