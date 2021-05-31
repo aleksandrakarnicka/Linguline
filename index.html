@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
     <script src="api.js" ></script>
     <h3>Created by M. Gierszewska, M. Iwaniec, A. Karnicka, M. Putrycz</h3>
 
@@ -26,10 +27,10 @@
             <p>1. Say hello to Linguline! </p>
             <p>2. Ask him about a word that you are interested in. You have 2 options:</p>
             <p>-> you can either write your word below and click 'send the message'</p>
-            <p>-> or you can click on the other button and say your word out loud</p>
+            <p>-> or you can click on the other button and say your word out loud and then click 'send the message'</p>
             <p>IMPORTANT: Speech recognition is not recognised by Firefox!</p>
             <p>3. You can only check one word at a time!</p>
-            <p>4. Enjoy your knowledge! </p></h2>
+            <p>4. Enjoy your unique knowledge! </p></h2>
         </center>
 
         <h3>Talk to me!</h3>
@@ -39,8 +40,9 @@
 
         <div class="form">
             <form> 
+               
                 <!-- <textarea disabled class="talkBot" id="partOfSpeech" placeholder="" style="background-color:#e6efee; resize: none; width: 100%; font-family: Consolas, monospace;" autocomplete="off"></textarea> -->
-                <textarea id="final" placeholder="Write here!" style="background-color:#e6efee; resize: none; width: 100%; font-family: Consolas, monospace;" autocomplete="off"></textarea>
+                <textarea id="final" placeholder="Write here!" style="background-color:#e6efee; resize: none; width: 100%; font-family: Consolas, monospace;" autocomplete="off" onclick="document.getElementById('final').value = ''" ></textarea>
                 <div id="output"></div>
                 <div class="btn-group">
                     <button type="button" onclick="getDefinitions(event)"> Send the message <i class="far fa-comment-dots"></i></button>
@@ -51,8 +53,9 @@
         </div>
     </center>
     <h3>Let's talk again soon!</h3></div>
+    
     <script src="speech.js" ></script>
-
+    
     </body>
 
     <footer>Jagodzianki™ 2021 | line PNG designed by ngupakarti from pngtree.com</footer>
