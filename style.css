@@ -22,7 +22,7 @@ text-align: center;
 text-align: center;
 color: #00917c;
 font-family: "Consolas", monospace;
-font-size: 10px;
+font-size: 12px;
 font-weight: lighter;
 margin-bottom: 10px;
 padding-top: 2%; 
@@ -35,7 +35,7 @@ h1 {
   font-family: "Consolas", monospace;
   background-color: white;
   color: #00917c;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: lighter;        
 }
 
@@ -45,7 +45,7 @@ h2 {
   background-color:#d3e1e1;
   text-align: left;
   font-family: "Consolas", monospace;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: lighter;
   padding: 10px;
   border: 1px solid #00917c;
@@ -56,7 +56,7 @@ h3 {
   text-align: center;
   color: #00917c;
   font-family: "Consolas", monospace;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: lighter;
 }
 
@@ -65,7 +65,7 @@ h4 {
   font-family: "Consolas", monospace;
   background-color: white;
   color: #00917c;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: lighter;
 }
 
@@ -75,7 +75,7 @@ h4 {
   background-color:#d3e1e1;
   text-align: left;
   font-family: "Consolas", monospace;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: lighter;
   padding: 10px;
   border: 0px solid #00917c;
@@ -96,7 +96,7 @@ form {
   flex-direction: column;
   justify-content: center;
   background-color:#d3e1e1;
-  padding: 10px;
+  padding: 14px;
   border: 1px solid #00917c;
   max-width: 700px;
 }
@@ -107,7 +107,7 @@ textarea {
   background-color:#d3e1e1;
   text-align: left;
   font-family: "Consolas", monospace;
-  font-size: 12px;
+  font-size: 20px;
   font-weight: lighter;
   padding: 10px;
   border: 1px solid #00917c;
