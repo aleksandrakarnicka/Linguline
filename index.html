@@ -39,10 +39,10 @@
     <center>
 
         <div class="form">
-            <form> 
+            <form onsubmit="getDefinitions(event)"> 
                
                 <!-- <textarea disabled class="talkBot" id="partOfSpeech" placeholder="" style="background-color:#e6efee; resize: none; width: 100%; font-family: Consolas, monospace;" autocomplete="off"></textarea> -->
-                <textarea id="final" placeholder="Write here!" style="background-color:#e6efee; resize: none; width: 100%; font-family: Consolas, monospace;" autocomplete="off" onclick="document.getElementById('final').value = ''" ></textarea>
+                <input id="final" placeholder="Write here!" style="background-color:#e6efee; resize: none; width: 100%; font-family: Consolas, monospace;" autocomplete="off" onclick="document.getElementById('final').value = ''" ></textarea>
                 <div id="output"></div>
                 <div class="btn-group">
                     <button type="button" onclick="getDefinitions(event)"> Send the message <i class="far fa-comment-dots"></i></button>
