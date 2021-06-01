@@ -1,9 +1,10 @@
 function getDefinitions(event) {
-    event.preventDefault();
+    event.preventDefault()
     const APIword = document.getElementById("final");
     let word = APIword && APIword.value.split(' ')[0];
     
     const output = document.getElementById("output");
+    output.innerHTML = "";
     
     let url = "https://api.dictionaryapi.dev/api/v2/entries/en_US/" + word;
     
@@ -44,5 +45,8 @@ function getDefinitions(event) {
                     }
                 }
             }
-    })
+        })
+        .catch(error => {
+            output.append("No word found")
+        })
 }
