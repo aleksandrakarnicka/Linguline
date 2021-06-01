@@ -47,6 +47,6 @@ function getDefinitions(event) {
             }
         })
         .catch(error => {
-            output.append("No word found")
+            output.append("Sorry! I couldn't find this word in my dictionary!")
         })
 }

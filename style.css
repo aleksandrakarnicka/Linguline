@@ -3,6 +3,8 @@ body {
   width: 100%; 
   margin: auto;
   background-color:#ffffff;
+  
+
   }
 
 .center {
@@ -276,7 +278,10 @@ button {
   padding-left: 3%;
   padding-right: 3%;
 }
-
+.sorry {
+  color: #000000;
+font-family: "Consolas", monospace;
+}
 .container {
   padding: 0 16px;
   justify-content: center;

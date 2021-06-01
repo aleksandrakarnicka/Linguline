@@ -24,13 +24,13 @@
         <h1>Hi! I'm a chatbot. You can ask me about different words! I am passionate about dictionaries!</h1>
         <center>
             <h2>Instructions:
-            <p>1. Say hello to Linguline! </p>
-            <p>2. Ask him about a word that you are interested in. You have 2 options:</p>
-            <p>-> you can either write your word below and click 'send the message'</p>
-            <p>-> or you can click on the other button and say your word out loud and then click 'send the message'</p>
+            
+            <p>1. Ask him about a word that you are interested in. You have 2 options:</p>
+            <p>-> you can write your word below and click 'send the message' or use ENTER</p>
+            <p>-> you can click on the other button and say your word out loud and then click 'send the message'</p>
             <p>IMPORTANT: Speech recognition is not recognised by Firefox!</p>
-            <p>3. You can only check one word at a time!</p>
-            <p>4. Enjoy your unique knowledge! </p></h2>
+            <p>2. You can only check one word at a time!</p>
+            <p>3. Enjoy your unique knowledge! </p></h2>
         </center>
 
         <h3>Talk to me!</h3>
@@ -43,7 +43,7 @@
                
                 <!-- <textarea disabled class="talkBot" id="partOfSpeech" placeholder="" style="background-color:#e6efee; resize: none; width: 100%; font-family: Consolas, monospace;" autocomplete="off"></textarea> -->
                 <input id="final" placeholder="Write here!" style="background-color:#e6efee; resize: none; width: 100%; font-family: Consolas, monospace;" autocomplete="off" onclick="document.getElementById('final').value = ''" ></textarea>
-                <div id="output"></div>
+                <div class="sorry" id="output"></div>
                 <div class="btn-group">
                     <button type="button" onclick="getDefinitions(event)"> Send the message <i class="far fa-comment-dots"></i></button>
                     <button type="button" onclick="runSpeechRecognition()"> Turn on speech recognition <i class="fa fa-microphone"></i></button><br>
