@@ -1,5 +1,13 @@
+document.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        getDefinitions(event)
+    }
+});
+
 function getDefinitions(event) {
     event.preventDefault()
+    const submitButton = document.getElementById("submit-button");
+    submitButton.disabled = true;
     const APIword = document.getElementById("final");
     let word = APIword && APIword.value.split(' ')[0];
     
@@ -48,5 +56,8 @@ function getDefinitions(event) {
         })
         .catch(error => {
             output.append("Sorry! I couldn't find this word in my dictionary!")
+        })
+        .finally(() =>{
+            submitButton.disabled = false;
         })
 }
