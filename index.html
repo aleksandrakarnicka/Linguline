@@ -39,13 +39,13 @@
     <center>
 
         <div class="form">
-            <form onsubmit="getDefinitions(event)"> 
+            <form> 
                
                 <!-- <textarea disabled class="talkBot" id="partOfSpeech" placeholder="" style="background-color:#e6efee; resize: none; width: 100%; font-family: Consolas, monospace;" autocomplete="off"></textarea> -->
-                <input id="final" placeholder="Write here!" style="background-color:#e6efee; resize: none; width: 100%; font-family: Consolas, monospace;" autocomplete="off" onclick="document.getElementById('final').value = ''" ></textarea>
+                <textarea id="final" placeholder="Write here!" style="background-color:#e6efee; resize: none; width: 100%; font-family: Consolas, monospace;" autocomplete="off" onclick="document.getElementById('final').value = ''" ></textarea>
                 <div class="sorry" id="output"></div>
                 <div class="btn-group">
-                    <button type="button" onclick="getDefinitions(event)"> Send the message <i class="far fa-comment-dots"></i></button>
+                    <button id="submit-button" type="button" onclick="getDefinitions(event)"> Send the message <i class="far fa-comment-dots"></i></button>
                     <button type="button" onclick="runSpeechRecognition()"> Turn on speech recognition <i class="fa fa-microphone"></i></button><br>
                     &nbsp; <span id="action"></span>    
                 </div>
